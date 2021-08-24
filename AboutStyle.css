@@ -1,0 +1,197 @@
+.Nav-Bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+#Logo {
+  height: 24px;
+  position: relative;
+  top: 16px;
+  left: 24px;
+}
+
+#Title {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.Links {
+  float: right;
+  padding-bottom: 24px;
+  text-align: center;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+a.nav {
+  padding-bottom: 2px;
+  text-decoration-line: none;
+  color: #000000;
+  margin-left: 24px;
+}
+
+a.nav:hover {
+  color: #000000;
+  border-bottom: solid 4px #C0D860;
+}
+
+a.navActive {
+  color: #000000;
+  border-bottom: solid 4px #003300;
+  text-decoration-line: none;
+  padding-bottom: 2px;
+}
+
+.Links:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'OpenSans', sans-serif;
+  min-width: 600px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 20px;
+  float: left;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+
+.Hero-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80vh;
+}
+
+#Hero-Caption {
+  font-weight: bold;
+  color: white;
+  font-size: 64px;
+  text-align: left;
+  padding-top: -100px;
+}
+
+.HeroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+h1.Page-Title {
+  font-size: 32px;
+  color: black;
+}
+
+.About-Content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80%;
+  margin-bottom: 32px;
+}
+
+.About-Text {
+  display: flex;
+  flex-direction: column;
+}
+
+#About-Headline1 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  /*margin-left: 200px;*/
+}
+
+#About-Caption {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: regular;
+  width: 100%;
+  /*margin-left: 200px;*/
+}
+
+.About-Photo-Right{
+  float: right;
+  width: 60%;
+  margin-left: 52px;
+}
+
+.About-Photo-Left{
+  float: left;
+  width: 60%;
+  margin-right: 52px;
+}
+
+.footer {
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #C0D860;
+ color: white;
+ /*padding-left: 160px; removed this because padding causes the width to largen*/
+ padding-top: 24px;
+ padding-bottom: 24px;
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ margin-left: 160px;
+}
+
+.footer-content-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 134px;
+}
+
+.footer-header-text {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.footer-body-text {
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: 400;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: -20px;
+  margin-left: 384px;
+  margin-bottom: -20px;
+}
+
+

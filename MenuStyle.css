@@ -1,0 +1,203 @@
+.Nav-Bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+#Logo {
+  height: 24px;
+  position: relative;
+  top: 16px;
+  left: 24px;
+}
+
+#Title {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.Links {
+  float: right;
+  padding-bottom: 24px;
+  text-align: center;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+a.nav {
+  padding-bottom: 2px;
+  text-decoration-line: none;
+  color: #000000;
+  margin-left: 24px;
+}
+
+a.nav:hover {
+  color: #000000;
+  border-bottom: solid 4px #C0D860;
+}
+
+a.navActive {
+  color: #000000;
+  border-bottom: solid 4px #003300;
+  text-decoration-line: none;
+  padding-bottom: 2px;
+  margin-left: 24px;
+}
+
+.Links:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  min-width: 600px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 48px;
+  float: left;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  float: left;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  margin: 16px 16px 8px 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  float: left;
+  font-weight: 600;
+  color: #000000;
+  text-align: left;
+  margin: 0px 16px 16px 16px;
+}
+
+b {
+  font-size: 16px;
+  line-height: 24px;
+  float: left;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+  margin: 0px 16px 32px 16px;
+}
+
+h1.Page-Title {
+  font-size: 32px;
+  color: black;
+}
+
+.MenuBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 154px; /*--122+32px for the 32px spacing--*//
+}
+
+.Menu-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1440px;
+  padding-bottom: 40px;
+}
+
+#Menu-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin-top: -40px;
+}
+
+.Menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 16px 32px 16px;
+  border-radius: 16px;
+}
+
+.Menu-Images {
+  width: 78%;
+}
+
+.Drinks:hover {
+  cursor: pointer;
+}
+
+.Drink-Title {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.footer {
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #C0D860;
+ color: white;
+ /*padding-left: 160px; removed this because padding causes the width to largen*/
+ padding-top: 24px;
+ padding-bottom: 24px;
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ margin-left: 160px;
+}
+
+.footer-content-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 134px;
+}
+
+.footer-header-text {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.footer-body-text {
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: 400;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: -20px;
+  margin-left: 384px;
+  margin-bottom: -20px;
+}
+
