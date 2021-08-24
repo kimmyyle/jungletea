@@ -6,7 +6,6 @@
   width: 100%;
   background-color: white;
   z-index: 1;
-  max-width: 1920px;
 }
 
 #Logo {
@@ -151,8 +150,48 @@ h1.Page-Title {
   margin-right: 52px;
 }
 
+.footer {
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #C0D860;
+ color: white;
+ /*padding-left: 160px; removed this because padding causes the width to largen*/
+ padding-top: 24px;
+ padding-bottom: 24px;
+}
 
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ margin-left: 160px;
+}
 
+.footer-content-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 134px;
+}
 
+.footer-header-text {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.footer-body-text {
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: 400;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: -20px;
+  margin-left: 384px;
+  margin-bottom: -20px;
+}
 
 

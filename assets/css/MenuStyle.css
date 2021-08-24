@@ -6,7 +6,6 @@
   width: 100%;
   background-color: white;
   z-index: 1;
-  max-width: 1920px;
 }
 
 #Logo {
@@ -106,7 +105,7 @@ h1.Page-Title {
   color: black;
 }
 
-.UIUX {
+.MenuBody {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,16 +113,16 @@ h1.Page-Title {
   margin-top: 154px; /*--122+32px for the 32px spacing--*//
 }
 
-.Drinks-Content {
+.Menu-Content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   max-width: 1440px;
-  padding-bottom: 160px;
+  padding-bottom: 40px;
 }
 
-#Drinks-Row {
+#Menu-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +131,7 @@ h1.Page-Title {
   margin-top: -40px;
 }
 
-.Drinks {
+.Menu {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -141,8 +140,8 @@ h1.Page-Title {
   border-radius: 16px;
 }
 
-.Drinks-Images {
-  width: 60%;
+.Menu-Images {
+  width: 78%;
 }
 
 .Drinks:hover {
@@ -157,3 +156,48 @@ h1.Page-Title {
   line-height: 24px;
   color: black;
 }
+
+.footer {
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #C0D860;
+ color: white;
+ /*padding-left: 160px; removed this because padding causes the width to largen*/
+ padding-top: 24px;
+ padding-bottom: 24px;
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ margin-left: 160px;
+}
+
+.footer-content-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 134px;
+}
+
+.footer-header-text {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.footer-body-text {
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: 400;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: -20px;
+  margin-left: 384px;
+  margin-bottom: -20px;
+}
+

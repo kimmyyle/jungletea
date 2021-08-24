@@ -1,12 +1,10 @@
 .Nav-Bar {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: -10px;
   width: 100%;
   background-color: white;
   z-index: 1;
-  max-width: 1920px;
+  height: 80px;
 }
 
 #Logo {
@@ -23,11 +21,22 @@
 
 .Links {
   float: right;
-  padding-bottom: 24px;
   text-align: center;
   padding-right: 40px;
   font-weight: bold;
+  position: relative;
+  /*bottom: 4px;
+  display: flex;
+  flex-direction: row;*/
 }
+
+.Links:hover {
+  cursor: pointer;
+}
+
+/*.SocialIcons {
+  padding-top: 16px;
+}*/
 
 a.nav {
   padding-bottom: 2px;
@@ -50,10 +59,6 @@ a.nav.active {
 a.image:hover {
   cursor: pointer;
   box-shadow: 0 0 0px rgba(33,33,33,.4);
-}
-
-.Links:hover {
-  cursor: pointer;
 }
 
 body {
@@ -233,6 +238,7 @@ p {
   align-items: left;
   position: relative;
   right: 396px; /* this is what i added to make the title left aligned*/
+  margin-top: -56px;
 }
 
 #Our-Top-Drinks {
@@ -263,5 +269,49 @@ p {
 .Our-Top-Drinks:hover {
   cursor: pointer;
   box-shadow: 0 0 32px rgba(33,33,33,.08);
+}
+
+.footer {
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #C0D860;
+ color: white;
+ /*padding-left: 160px; removed this because padding causes the width to largen*/
+ padding-top: 24px;
+ padding-bottom: 24px;
+}
+
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ margin-left: 160px;
+}
+
+.footer-content-column {
+ display: flex;
+ flex-direction: column;
+ margin-right: 134px;
+}
+
+.footer-header-text {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.footer-body-text {
+ font-size: 12px;
+ line-height: 16px;
+ font-weight: 400;
+}
+
+.footer-logo {
+  position: relative;
+  margin-top: -20px;
+  margin-left: 384px;
+  margin-bottom: -20px;
 }
 
