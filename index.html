@@ -1,142 +1,151 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title> Jungle Tea </title>
+	<title> Jungle Tea | Home </title>
 	<link rel="stylesheet" type="text/css" href="assets/css/IndexStyle.css">
 	<link href="https://fonts.googleapis.com/css?family=OpenSans:400,600,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
 <body>
 
 	<!--NAV BAR-->
-	<div class="Nav-Bar">
-		<div class="Nav-Bar-Items">
+	<div class="NavBar">
+		<div class="NavBarItems">
 
 			<div id="Title">
 				<a href="index.html"><img src = "assets/img/JungleTeaLogo.svg" id="Logo"/></a>
 			</div>
 
+			<div class="SocialButtons">
+				<img src='assets/img/Instagram.svg' onmouseover="this.src='assets/img/InstagramHover.svg';" onmouseout="this.src='assets/img/Instagram.svg';" class="SocialIcons"/>
+				<img src='assets/img/Facebook.svg' onmouseover="this.src='assets/img/FacebookHover.svg';" onmouseout="this.src='assets/img/Facebook.svg';" class="SocialIcons"/>
+				<img src='assets/img/Yelp.svg' onmouseover="this.src='assets/img/YelpHover.svg';" onmouseout="this.src='assets/img/Yelp.svg';" class="SocialIcons"/>
+			</div>
+
 			<div class="Links">
 				<a class="nav" href="About.html">ABOUT</a>
 				<a class="nav" href="Drinks.html">DRINKS</a>
-				<a class="nav" href="Appetizers.html">APPETIZERS</a>
+				<!--<a class="nav" href="Appetizers.html">APPETIZERS</a>-->
 				<a class="nav" href="Menu.html">MENU</a>
 				<a class="nav" href="Order.html">ORDER NOW</a>
-				<!--<img src='assets/img/Instagram.svg' onmouseover="this.src='assets/img/InstagramHover.svg';" onmouseout="this.src='assets/img/Instagram.svg';" class="SocialIcons"/>
-				<img src='assets/img/Facebook.svg' onmouseover="this.src='assets/img/FacebookHover.svg';" onmouseout="this.src='assets/img/Facebook.svg';" class="SocialIcons"/>
-				<img src='assets/img/Yelp.svg' onmouseover="this.src='assets/img/YelpHover.svg';" onmouseout="this.src='assets/img/Yelp.svg';" class="SocialIcons"/>-->
 			</div>
+
 		</div>
 	</div>
 
 <!--HERO-->
-<div class="container">
-  <img src="assets/img/HeroImage.png" alt="Hero" style="width:100%;">
-  <div class="HeroText">
-  		FRESH TEA, FRESH JUICE,
-  		<br>EVERY DAY</br>
-  		<br><a href="Order.html"> <div class="button">ORDER NOW</div></a></br>
-  	</div>
+<div class="HeroImage">
+	<a class="image" href="Order.html">
+  	<img src="assets/img/Hero.png" alt="Hero" style="width:100%;">
+  </a>
+  <!--<div class="HeroText"> text here </div>-->
 </div>
 
-<!--
-	<div class="DrinksAppetizersAboutUs">
-  		<div class="column"></div>
-  		<div class="column"></div>
- 		 <div class="column"></div>
-	</div>
+<!--Drinks, Menu, About Us Links-->
+<div class="Entire-DMA-Content-Including-Padding">
 
-<h2>Three Equal Columns</h2>
+	<!--Our Top Drinks Title-->
+	<div class="DMA-Content">
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>DRINKS</h2>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>APPETIZERS</h2>
-  </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>ABOUT US</h2>
-  </div>
-</div>
--->
+		<!--Top Drinks-->
+		<div class="Top-Drinks">
 
-	<!--Drinks, Appetizers, About Us-->
-		<div class="DAA-Content">
-
-			<!--DAA-->
-			<div id="DAA">
-				<div class="DAA">
-					<a class="image" href="Drinks.html">
-							<!--<img src = "assets/img/DrinksButton.pdf" class="DAA-Images-1" />-->
-							<img src='assets/img/DrinksButton.pdf' onmouseover="this.src='assets/img/DrinksButtonHover.pdf';" onmouseout="this.src='assets/img/DrinksButton.pdf';" class="DAA-Images-1" />
-					</a>
-				</div>
-				
-				<div class="DAA">
-					<a class="image" href="Appetizers.html">
-						<!--<img src = "assets/img/AppetizersButton.pdf" class="DAA-Images-2" />-->
-							<img src='assets/img/AppetizersButton.pdf' onmouseover="this.src='assets/img/AppetizersButtonHover.pdf';" onmouseout="this.src='assets/img/AppetizersButton.pdf';" class="DAA-Images-1" />
-					</a>
-				</div>
-				
-				<div class="DAA">
-					<a class="image" href="About.html">
-						<!--<img src = "assets/img/AboutUsButton.pdf" class="DAA-Images-3" />-->
-							<img src='assets/img/AboutUsButton.pdf' onmouseover="this.src='assets/img/AboutUsButtonHover.pdf';" onmouseout="this.src='assets/img/AboutUsButton.pdf';" class="DAA-Images-1" />
-					</a>
-				</div>
-
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<a class="image" href="Drinks.html">
+							<img src='assets/img/DrinksButton.png' onmouseover="this.src='assets/img/DrinksButtonHover.png';" onmouseout="this.src='assets/img/DrinksButton.png';" class="DMA-Images" />
+						</a>
+					</div>
 			</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<a class="image" href="Menu.html">
+							<img src='assets/img/MenuButton.png' onmouseover="this.src='assets/img/MenuButtonHover.png';" onmouseout="this.src='assets/img/MenuButton.png';" class="DMA-Images" />
+						</a>
+					</div>
+			</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<a class="image" href="About.html">
+							<img src='assets/img/AboutUsButton.png' onmouseover="this.src='assets/img/AboutUsButtonHover.png';" onmouseout="this.src='assets/img/AboutUsButton.png';" class="DMA-Images" />
+						</a>
+					</div>
+			</div>
+			
+		</div> <!--end class of Top-Drinks-->
+	</div> <!--end class of Drinks Content-->
+</div> <!--end class of Entire Content Including Padding-->
+
+<!--Grid-->
+<div class="Entire-Content-Including-Padding">
+
+	<!--Our Top Drinks Title-->
+	<div class="Drinks-Content">
+
+		<div class="Our-Top-Drinks-Title" >
+			<h1>Our Top Drinks</h1>
 		</div>
 
-	<!--Our Top Drinks-->
-		<div class="Drinks-Content">
+		<!--Top Drinks-->
+		<div class="Top-Drinks">
 
-			<div class="Our-Top-Drinks-Title" >
-				<h1>Our Top Drinks</h1>
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Drink-Title" >
+							<p>Jungle Milk Tea</p>
+						</div>
+					</div>
 			</div>
 
-			<!--Our Top Drinks-->
-			<div id="Our-Top-Drinks">
-				<div class="Our-Top-Drinks">
-					<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
-					<div class="Drink-Title" >
-						<p>Jungle Milk Tea</p>
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Drink-Title" >
+							<p>Jungle Milk Tea</p>
+						</div>
 					</div>
-				</div>
-				
-				<div class="Our-Top-Drinks">
-					<img src = "assets/img/Drink-2.png" class="Our-Top-Drinks-Images" />
-					<div class="Drink-Title" >
-						<p>Passion Fruit</p>
-					</div>
-				</div>
-				
-				<div class="Our-Top-Drinks">
-					<img src = "assets/img/Drink-3.png" class="Our-Top-Drinks-Images" />
-					<div class="Drink-Title" >
-						<p>Wintermelon</p>
-					</div>
-				</div>
-
-				<div class="Our-Top-Drinks">
-					<img src = "assets/img/Drink-4.png" class="Our-Top-Drinks-Images" />
-					<div class="Drink-Title" >
-						<p>Tiger Milk Tea</p>
-					</div>
-				</div>
 			</div>
-		</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Drink-Title" >
+							<p>Jungle Milk Tea</p>
+						</div>
+					</div>
+			</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Drink-Title" >
+							<p>Jungle Milk Tea</p>
+						</div>
+					</div>
+			</div>
+			
+		</div> <!--end class of Top-Drinks-->
+	</div> <!--end class of Drinks Content-->
+</div> <!--end class of Entire Content Including Padding-->
 
 
 	<!--Footer-->
 		<div class="footer">
 
-			<div class="footer-content">
+			<div class="footer-content-1">
+				<div class="footer-content-logo">
+					<img src = "assets/img/JungleTeaCircleLogo.svg" class="footer-logo" />
+				</div>
+			</div>
 
-				<div class="footer-content-column">
+			<div class="footer-content-2">
+
+				<div class="footer-content-left">
 						<div class="footer-header-text">
 					  	JUNGLE TEA
 					  </div>
@@ -145,7 +154,7 @@
 					  </div>
 				</div>
 
-				<div class="footer-content-column">
+				<div class="footer-content-left">
 						<div class="footer-header-text">
 					  	HOURS
 					  </div>
@@ -154,7 +163,14 @@
 					  </div>
 				</div>
 
-				<img src = "assets/img/JungleTeaCircleLogo.svg" class="footer-logo" />
+				<div class="footer-content-right">
+						<div class="footer-header-text">
+					  	MORE
+					  </div>
+					  <div class="footer-body-text">
+					  	<u>Contact Us</u> <br><u>Careers</u></br>
+					  </div>
+				</div>
 
 			</div>
 
