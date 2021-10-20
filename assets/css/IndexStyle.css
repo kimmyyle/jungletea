@@ -1,28 +1,33 @@
-.Nav-Bar {
-  position: fixed;
-  top: -10px;
+.NavBar {
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: white;
   z-index: 1;
-  height: 80px;
+  height: 100px;
+}
+
+.NavBarItems {
+  position: flex;
+  flex-direction: row;
 }
 
 #Logo {
   height: 24px;
   position: relative;
-  top: 16px;
+  top: 20px;
   left: 24px;
 }
 
 #Title {
   padding-left: 20px;
-  padding-top: 15px;
+  padding-top: 17px;
 }
 
 .Links {
   float: right;
   text-align: center;
-  padding-right: 40px;
+  padding-right: 20px;
   font-weight: bold;
   position: relative;
   /*bottom: 4px;
@@ -33,10 +38,6 @@
 .Links:hover {
   cursor: pointer;
 }
-
-/*.SocialIcons {
-  padding-top: 16px;
-}*/
 
 a.nav {
   padding-bottom: 2px;
@@ -50,250 +51,213 @@ a.nav:hover {
   border-bottom: solid 4px #C0D860;
 }
 
-a.nav.active {
+a.navActive {
   color: #000000;
   border-bottom: solid 4px #003300;
+  text-decoration-line: none;
+  padding-bottom: 2px;
+  margin-left: 24px;
 }
-
 
 a.image:hover {
   cursor: pointer;
   box-shadow: 0 0 0px rgba(33,33,33,.4);
 }
 
+.SocialButtons {
+  margin-right: 40px;
+}
+
+.SocialIcons {
+  float: right;
+  margin-top: -16px;
+}
+
+.SocialIcons:hover {
+  cursor: pointer;
+}
+
 body {
   background-color: #f7f7f7;
-  color: white;
   font-family: 'OpenSans', sans-serif;
   min-width: 600px;
   margin: 0px;
   padding: 0px;
 }
 
-
 h1 {
-  font-size: 24px; /* originally 32, 48*/
-  line-height: 36px;
-  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #000000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
   font-weight: 700;
+  line-height: 24px;
   color: #000000;
   text-align: left;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.HeroImage {
+  width: 100%;
+  min-width: 375px;
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
-  float: left;
   font-weight: 600;
-  color: #000000;
+}
+
+b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   text-align: left;
-  margin: 0px 16px 16px 16px;
 }
 
-
-#Hero {
-  width: 100%;
-  position: relative;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.Hero-Content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 80vh;
+p {
+  margin: 0 0 1em 0;
 }
 
-#Hero-Caption {
-  font-weight: bold;
-  color: white;
-  font-size: 64px;
-  text-align: left;
-  padding-top: -100px;
+.wrapper {
+  width: 450px;
+  border: 2px dotted #999;
 }
 
-.HeroText {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
+.Entire-DMA-Content-Including-Padding {
+  margin-top: 24px;
 }
 
-.button {
-  background-color: #C0D860; /* Bamboo */
-  opacity: 100%;
-  border-radius: 8px;
-  color: white;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-}
-
-.button:hover {
-  cursor: pointer;
-  background-color: #FFFFFF; /* Bamboo */
-  opacity: 100%;
-  outline: 2px #C0D860;
-  border-radius: 8px;
-  color: #C0D860;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-}
-
-.column {
-  float: left;
-  width: 20%;
-  padding: 24px;
-  align-items: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.DAA-Content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 32px;
-  max-width: 1440px;
-  padding-bottom: 40px;
-}
-
-#DAA {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1440px;
-  margin-top: -40px;
-}
-
-.DAA {
-  height: 200px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 32px 16px 32px 16px;
+.DMA {
+  background-color: white;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.DAA-Images-1 {
-  height: 100%;
-  width: 100%;
+.DMA:hover {
+  cursor: pointer;
 }
 
-.DAA-Images-2 {
-  height: 100%;
-  width: 100%;
-}
-
-.DAA-Images-3 {
-  height: 100%;
-  width: 100%;
-}
-
-.DAA-Images-1:hover {
+.DMA-Images:hover {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 0 16px rgba(33,33,33,.4);
 }
 
-.DAA-Images-2:hover {
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 0 16px rgba(33,33,33,.4);
-}
-
-.DAA-Images-3:hover {
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 0 16px rgba(33,33,33,.4);
+.DMA-Content {
+  display: flex;
+  flex-direction: column;
 }
 
 .Drinks-Content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1440px;
-  padding-bottom: 40px;
 }
 
 .Our-Top-Drinks-Title {
-  align-items: left;
-  position: relative;
-  right: 396px; /* this is what i added to make the title left aligned*/
-  margin-top: -56px;
+  align-items: center;
+  align-content: center;
+  padding-top: 16px;
 }
 
-#Our-Top-Drinks {
+.h1.Our-Top-Drinks-Title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Top-Drinks{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1440px;
-  margin-top: -40px;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.Top-Drink-Item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.Top-Drink-Item > * {
+  flex: 1 1 250px;
+  margin: 10px;
 }
 
 .Our-Top-Drinks {
-  height: 217px;
-  width: 217px;
+  background-color: white;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px 16px 32px 16px;
-  background-color: white;
-  border-radius: 8px;
 }
 
-.Our-Top-Drinks-Images {
-  height: 80%;
-  width: 60%;
-}
-
-.Our-Top-Drinks:hover {
-  cursor: pointer;
-  box-shadow: 0 0 32px rgba(33,33,33,.08);
+.Drink-Title {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
 }
 
 .footer {
- position: relative;
- left: 0;
  bottom: 0;
- width: 100%;
  background-color: #C0D860;
  color: white;
- /*padding-left: 160px; removed this because padding causes the width to largen*/
- padding-top: 24px;
- padding-bottom: 24px;
-}
-
-.footer-content {
- display: flex;
- flex-direction: row;
- text-align: left;
- margin-left: 160px;
-}
-
-.footer-content-column {
+ padding-top: 40px;
+ padding-bottom: 48px;
+ padding-left: 10%;
+ padding-right: 10%;
  display: flex;
  flex-direction: column;
- margin-right: 134px;
+ margin-top: 40px;
+}
+
+.footer-content-1 {
+ display: grid;
+ grid-template-columns: 100%;
+ margin-bottom: 24px;
+}
+
+.footer-content-logo {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.footer-content-2 {
+ display: grid;
+ grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.footer-content-left {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding-left: 25%;
+ padding-right: 25%;
+}
+
+.footer-content-right {
+ display: flex;
+ flex-direction: column;
+ text-align: right;
+ padding-left: 25%;
+ padding-right: 25%;
 }
 
 .footer-header-text {
@@ -310,8 +274,8 @@ p {
 
 .footer-logo {
   position: relative;
-  margin-top: -20px;
-  margin-left: 384px;
-  margin-bottom: -20px;
+  width: 80px;
+  float: right;
 }
+
 
