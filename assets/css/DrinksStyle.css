@@ -97,7 +97,8 @@ a.image:hover {
 
 .SocialIcons {
   float: right;
-  margin-top: -16px;
+  margin-top: -13px;
+  width: 44px;
 }
 
 .SocialIcons:hover {
