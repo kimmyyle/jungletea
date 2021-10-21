@@ -44,7 +44,7 @@ a {
     margin: 8px;
 }
 
-@media only screen and (max-width: 978) {
+@media only screen and (max-width: 978px) {
     #Logo {
         height: 24px;
     }
@@ -367,8 +367,8 @@ h1.Our-Top-Drinks-Title {
     .Top-Drinks {
         display: flex;
         flex-direction: column;
-        margin-left: -4%;
-        margin-right: -4%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
@@ -384,8 +384,8 @@ h1.Our-Top-Drinks-Title {
   margin: 10px;
 }
 
-@media only screen and (max-width: 480) {
-    .Top-Drink-Item > *{
+@media only screen and (max-width: 480px) {
+    .Top-Drink-Item > * {
         margin: 0px;
     }
 }
@@ -396,6 +396,12 @@ h1.Our-Top-Drinks-Title {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .Our-Top-Drinks {
+        border-radius: 0px;
+    }
 }
 
 .Top-Drink-Title {
@@ -496,6 +502,14 @@ h1.Our-Top-Drinks-Title {
     }
 }
 
+.image-full{
+   display:block;
+  }
+
+ .image-mobile{
+  display:none;
+ }
+
 @media only screen and (max-width: 480px) {
   .footer-header-text {
    font-size: 20px;
@@ -512,7 +526,17 @@ h1.Our-Top-Drinks-Title {
   .footer-logo {
     width: 120px;
   }
+
+  .image-full {
+   display:none;
+  }
+
+  .image-mobile {
+   display:block;
+  }
+
 }
+
 
 
 
