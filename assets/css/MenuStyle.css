@@ -259,7 +259,7 @@ h1.Page-Title {
 .footer-header-text {
  font-size: 16px;
  line-height: 24px;
- font-weight: 700;
+ font-weight: 800;
 }
 
 .footer-body-text {
@@ -274,3 +274,48 @@ h1.Page-Title {
   float: right;
 }
 
+@media only screen and (max-width: 1010px) {
+    .footer-content-left {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 632px) {
+    .footer-content-left {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    .footer-content-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content-left {
+        padding-bottom: 16px;
+    }
+    .footer-content-right {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-header-text {
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 800;
+  }
+
+  .footer-body-text {
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+}
