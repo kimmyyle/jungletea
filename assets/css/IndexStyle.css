@@ -57,7 +57,7 @@ a {
 
 @media only screen and (max-width: 480px) {
     #Logo {
-        height: 44px;
+        height: 32px;
     }
 }
 
@@ -77,8 +77,8 @@ a {
         border-radius: 0px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        /*box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);*/
         z-index: 1;
     }
 
@@ -86,13 +86,14 @@ a {
         left: 0;
         width: 100%;
         padding-left: 0px;
+        background-color: white;
     }
 }
 
 @media only screen and (max-width: 480px) {
   .nav-menu {
     position: fixed;
-    top: 7rem;
+    top: 5.8rem;
   }
 }
 
