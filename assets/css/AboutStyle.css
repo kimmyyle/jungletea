@@ -108,7 +108,6 @@ a.image:hover {
 body {
   background-color: #ffffff;
   font-family: 'OpenSans', sans-serif;
-  min-width: 600px;
   margin: 0px;
   padding: 0px;
 }
@@ -128,7 +127,6 @@ h1 {
 
 .HeroImage {
   width: 100%;
-  min-width: 375px;
 }
 
 h1.Page-Title {
