@@ -248,14 +248,14 @@ body {
 }
 
 .section-2-image {
-    display: gird;
+    display: grid;
     grid-template-columns: 50% 50%;
     margin-bottom: 2.5%;
 }
 
 .section-2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-bottom: 5%;
 }
 
