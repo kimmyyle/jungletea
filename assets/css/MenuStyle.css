@@ -42,11 +42,14 @@ a {
 #Logo {
     height: 32px;
     margin: 8px;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 978px) {
     #Logo {
         height: 24px;
+        margin-top: 8px;
+        margin-bottom: 6px;
     }
     a.Logo {
         position: relative;
@@ -98,7 +101,7 @@ a {
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 .nav-link{
@@ -369,6 +372,7 @@ p {
     }
 }
 
+
 @media only screen and (min-width: 769px) {
   .header {
     z-index: 1;
@@ -402,22 +406,28 @@ p {
 
   .footer {
     margin-top: 8px;
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
 
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-content-1 {
+    margin-bottom: 16px;
+  }
+  
   .footer-header-text {
-   font-size: 20px;
-   line-height: 24px;
+   font-size: 14px;
+   line-height: 20px;
    font-weight: 800;
   }
 
   .footer-body-text {
-     font-size: 16px;
-     line-height: 24px;
+     font-size: 12px;
+     line-height: 20px;
      font-weight: 400;
-  }
-
-  .footer-logo {
-    width: 120px;
   }
 
 }
