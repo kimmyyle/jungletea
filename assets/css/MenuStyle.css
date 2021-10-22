@@ -129,6 +129,11 @@ a {
     font-size: 20px;
     line-height: 24px;
   }
+
+  .nav-link-active {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .nav-link-order {
@@ -222,31 +227,6 @@ body {
   padding: 0px;
 }
 
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #000000;
-  text-align: center;
-}
-
-@media only screen and (max-width: 978px) {
-    h1 {
-      font-size: 24px;
-      line-height: 32px;
-    }
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  text-align: left;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
 p {
   font-size: 16px;
   line-height: 24px;
@@ -255,16 +235,6 @@ p {
   color: #000000;
   text-align: left;
   margin: 0px 16px 16px 16px;
-}
-
-b {
-  font-size: 16px;
-  line-height: 24px;
-  float: left;
-  font-weight: 400;
-  color: #000000;
-  text-align: left;
-  margin: 0px 16px 32px 16px;
 }
 
 .MenuBody {
@@ -306,19 +276,6 @@ b {
 
 .Menu-Images {
   width: 78%;
-}
-
-.Drinks:hover {
-  cursor: pointer;
-}
-
-.Drink-Title {
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  color: black;
 }
 
 .footer {
