@@ -1,84 +1,212 @@
-.NavBar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-  height: 100px;
+html {
+    font-size: 62.5%;
+    font-family: 'OpenSans', sans-serif;
 }
 
-.NavBarItems {
-  position: flex;
-  flex-direction: row;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #E2E8F0;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 #Logo {
-  height: 24px;
-  position: relative;
-  top: 20px;
-  left: 24px;
+    height: 32px;
+    margin: 8px;
 }
 
-#Title {
-  padding-left: 20px;
-  padding-top: 17px;
+@media only screen and (max-width: 978px) {
+    #Logo {
+        height: 24px;
+    }
+    a.Logo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
-.Links {
-  float: right;
-  text-align: center;
-  padding-right: 20px;
-  font-weight: bold;
-  position: relative;
-  /*bottom: 4px;
-  display: flex;
-  flex-direction: row;*/
+@media only screen and (max-width: 480px) {
+    #Logo {
+        height: 32px;
+    }
 }
 
-.Links:hover {
-  cursor: pointer;
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a.nav {
-  padding-bottom: 2px;
-  text-decoration-line: none;
-  color: #000000;
-  margin-left: 24px;
+@media only screen and (max-width: 978px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border-radius: 0px;
+        text-align: center;
+        transition: 0.3s;
+        /*box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);*/
+        z-index: 1;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        width: 100%;
+        padding-left: 0px;
+        background-color: white;
+    }
 }
 
-a.nav:hover {
+@media only screen and (max-width: 480px) {
+  .nav-menu {
+    position: fixed;
+    top: 5.8rem;
+  }
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 16px; /*was 1.6rem*/
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-link:hover{
   color: #000000;
   border-bottom: solid 4px #C0D860;
 }
 
-a.navActive {
+.nav-link-active{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
   color: #000000;
   border-bottom: solid 4px #003300;
   text-decoration-line: none;
   padding-bottom: 2px;
-  margin-left: 24px;
 }
 
-a.navOrder {
+@media only screen and (max-width: 978px) {
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-link {
+        font-weight: 600;
+    }
+
+    .nav-link-active{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #000000;
+      border-bottom: solid 4px #003300;
+      text-decoration-line: none;
+      padding-bottom: 2px;
+    }
+
+    .SocialIcons {
+      float: right;
+      margin-top: -13px;
+      width: 44px;
+    }
+
+    .SocialIcons:hover {
+      cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .nav-link-active {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.nav-link-order {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
   text-decoration-line: none;
   color: #000000;
-  margin-left: 24px;
   border-style: solid;
   border-width: 2px;
   border-color: #000000;
   border-radius: 8px;
 }
 
-a.navOrder:hover {
+.nav-link-order:hover {
   color: #FFFFFF;
   background-color: black;
 }
 
-a.navOrderActive {
+.nav-link-orderActive {
   color: #000000;
   border-bottom: solid 4px #003300;
   text-decoration-line: none;
@@ -86,23 +214,18 @@ a.navOrderActive {
   margin-left: 24px;
 }
 
-a.image:hover {
-  cursor: pointer;
-  box-shadow: 0 0 0px rgba(33,33,33,.4);
-}
-
-.SocialButtons {
-  margin-right: 40px;
-}
-
 .SocialIcons {
   float: right;
-  margin-top: -13px;
   width: 44px;
 }
 
 .SocialIcons:hover {
   cursor: pointer;
+}
+
+a.image:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px rgba(33,33,33,.4);
 }
 
 body {
@@ -169,14 +292,29 @@ p {
 .Our-Top-Drinks-Title {
   align-items: center;
   align-content: center;
-  padding-top: 16px;
-}
-
-.h1.Our-Top-Drinks-Title {
   font-size: 32px;
   line-height: 48px;
   font-weight: 700;
+  color: #000000;
   text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 978px) {
+    .Our-Top-Drinks-Title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Our-Top-Drinks-Title {
+      font-size: 20px;
+      line-height: 32px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
 }
 
 .Top-Drinks{
@@ -185,6 +323,86 @@ p {
   justify-content: space-between;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+.DrinksandToppings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.Top-Drinks-mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: none;
+}
+
+@media only screen and (max-width: 1030px) {
+    .Top-Drinks {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .DrinksandToppings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 978px) {
+    .Top-Drinks {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .DrinksandToppings {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-Drinks {
+        display: none;
+    }
+
+    .DrinksandToppings {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7.5%;
+      margin-right: 11%;
+    }
+
+    .Top-Drinks-mobile {
+        display: flex;
+        flex-direction: row;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .Top-Drink-Item {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    b {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
 }
 
 .Top-Drink-Item {
@@ -199,6 +417,12 @@ p {
   margin: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+    .Top-Drink-Item > * {
+        margin: 0px;
+    }
+}
+
 .Our-Top-Drinks {
   background-color: white;
   border-radius: 16px;
@@ -208,10 +432,24 @@ p {
 }
 
 .Top-Drink-Title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
-  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-Drink-Title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.Our-Top-Drinks-Images {
+  border-radius: 10px 10px 0px 0px;
 }
 
 .Drink-Description {
