@@ -283,7 +283,8 @@ p {
 
 .footer {
  bottom: 0;
- background-color: #C0D860;
+/* background-color: #C0D860;*/
+ background-color: #003300;
  color: white;
  padding-top: 40px;
  padding-bottom: 48px;
