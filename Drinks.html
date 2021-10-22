@@ -10,30 +10,38 @@
 
 <body>
 
-	<!--NAV BAR-->
-	<div class="NavBar">
-		<div class="NavBarItems">
-
-			<div id="Title">
-				<a href="index.html"><img src = "assets/img/JungleTeaLogo.svg" id="Logo"/></a>
-			</div>
-
-			<div class="SocialButtons">
-				<img src='assets/img/Instagram.png' onmouseover="this.src='assets/img/InstagramHover.png';" onmouseout="this.src='assets/img/Instagram.png';" class="SocialIcons"/>
-				<img src='assets/img/Facebook.png' onmouseover="this.src='assets/img/FacebookHover.png';" onmouseout="this.src='assets/img/Facebook.png';" class="SocialIcons"/>
-				<img src='assets/img/Yelp.png' onmouseover="this.src='assets/img/YelpHover.png';" onmouseout="this.src='assets/img/Yelp.png';" class="SocialIcons"/>
-			</div>
-
-			<div class="Links">
-				<a class="nav" href="About.html">ABOUT</a>
-				<a class="navActive" href="Drinks.html">DRINKS</a>
-				<!--<a class="nav" href="Appetizers.html">APPETIZERS</a>-->
-				<a class="nav" href="Menu.html">MENU</a>
-				<a class="navOrder" href="Order.html">ORDER NOW</a>
-			</div>
-
-		</div>
-	</div>
+	<!--NAVBAR-->
+	<header class="header">
+	    <nav class="navbar">
+	        <a class="Logo" href="index.html">
+	        	<img src = "assets/img/JungleTeaLogo.svg" id="Logo"/>
+	        </a>
+	        <ul class="nav-menu">
+	            <li class="nav-item">
+	                <a href="About.html" class="nav-link">ABOUT</a>
+	            </li>
+	            <li class="nav-item">
+	                <a href="Drinks.html" class="nav-link-active">DRINKS</a>
+	            </li>
+	            <li class="nav-item">
+	                <a href="Menu.html" class="nav-link">MENU</a>
+	            </li>
+	            <li class="nav-item">
+	                <a href="Order.html" class="nav-link-order">ORDER NOW</a>
+	            </li>
+	            <li class="nav-item">
+	                <img src='assets/img/Instagram.png' onmouseover="this.src='assets/img/InstagramHover.png';" onmouseout="this.src='assets/img/Instagram.png';" class="SocialIcons"/>
+	                <img src='assets/img/Facebook.png' onmouseover="this.src='assets/img/FacebookHover.png';" onmouseout="this.src='assets/img/Facebook.png';" class="SocialIcons"/>
+	                <img src='assets/img/Yelp.png' onmouseover="this.src='assets/img/YelpHover.png';" onmouseout="this.src='assets/img/Yelp.png';" class="SocialIcons"/>
+	            </li>
+	        </ul>
+	        <div class="hamburger">
+	            <span class="bar"></span>
+	            <span class="bar"></span>
+	            <span class="bar"></span>
+	        </div>
+	    </nav>
+	</header>
 
 <!--HERO-->
 <div class="HeroImage">
@@ -48,7 +56,7 @@
 	<div class="Drinks-Content">
 
 		<div class="Our-Top-Drinks-Title" >
-			<h1>Our Top Drinks</h1>
+			Our Top Drinks
 		</div>
 
 		<!--Top Drinks-->
@@ -92,13 +100,59 @@
 			
 		</div> <!--end class of Top-Drinks-->
 
+		<!--Top Drinks MOBILE-->
+		<div class="Top-Drinks-mobile">
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Top-Drink-Title" >
+							Jungle Milk Tea
+						</div>
+					</div>
+			</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Top-Drink-Title" >
+							Jungle Milk Tea
+						</div>
+					</div>
+			</div>
+			
+		</div> <!--end class of Top Drinks MOBILE-->
+
+		<!--Top Drinks MOBILE-->
+		<div class="Top-Drinks-mobile">
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Top-Drink-Title" >
+							Jungle Milk Tea
+						</div>
+					</div>
+			</div>
+
+			<div class="Top-Drink-Item">
+					<div class="Our-Top-Drinks">
+						<img src = "assets/img/Drink-1.png" class="Our-Top-Drinks-Images" />
+						<div class="Top-Drink-Title" >
+							Jungle Milk Tea
+						</div>
+					</div>
+			</div>
+
+		</div> <!--end class of Top Drinks MOBILE-->
+
 	<!--DRINKS-->
 		<div class="Our-Top-Drinks-Title" >
-			<h1>Drinks</h1>
+			Drinks
 		</div>
 
 		<!--Drinks Row 1-->
-		<div class="Top-Drinks">
+		<div class="DrinksandToppings">
 
 			<div class="Top-Drink-Item">
 					<div class="Our-Top-Drinks">
@@ -133,7 +187,7 @@
 		</div> <!--end class of Drinks Row 1-->
 
 		<!--Drinks Row 2-->
-		<div class="Top-Drinks">
+		<div class="DrinksandToppings">
 
 			<div class="Top-Drink-Item">
 					<div class="Our-Top-Drinks">
@@ -169,11 +223,11 @@
 
 	<!--TOPPINGS-->
 		<div class="Our-Top-Drinks-Title" >
-			<h1>Toppings</h1>
+			Toppings
 		</div>
 
 		<!--Toppings Row 1-->
-		<div class="Top-Drinks">
+		<div class="DrinksandToppings">
 
 			<div class="Top-Drink-Item">
 					<div class="Our-Top-Drinks">
@@ -204,11 +258,14 @@
 						</div>
 					</div>
 			</div>
+		</div>
+
+		</div> <!--end class of Top Drinks MOBILE-->
 			
 		</div> <!--end class of Toppings Row 1-->
 
 		<!--Toppings Row 2-->
-		<div class="Top-Drinks">
+		<div class="DrinksandToppings">
 
 			<div class="Top-Drink-Item">
 					<div class="Our-Top-Drinks">
@@ -291,5 +348,5 @@
 	<!--End footer-->
 
 </body>
-
+<script src="assets/main.js"></script>
 </html>
