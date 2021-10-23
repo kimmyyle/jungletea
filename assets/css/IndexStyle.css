@@ -261,11 +261,12 @@ p {
 
 .DMA-Images {
   width: 100%;
+  border-radius: 8px;
 }
 
 .DMA-Images:hover {
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 0 16px rgba(33,33,33,.4);
 }
 
@@ -317,6 +318,14 @@ p {
     height: 50%;
 }*/
 
+.DMAs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .Top-Drinks{
   display: flex;
   flex-direction: row;
@@ -339,6 +348,11 @@ p {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    .DMAs {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 @media only screen and (max-width: 978px) {
@@ -346,9 +360,20 @@ p {
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .DMAs {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .DMAs {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .Top-Drinks {
         display: none;
     }
@@ -365,9 +390,21 @@ p {
         margin-right: 2.5%;
     }
 
+    .DMA-Container {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
 }
 
 .Top-Drink-Item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.DMA-Container {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2em;
@@ -379,13 +416,33 @@ p {
   margin: 10px;
 }
 
+.DMA-Container > * {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 480px) {
     .Top-Drink-Item > * {
         margin: 0px;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .DMA-Container > * {
+        margin: 0px;
+    }
+}
+
 .Our-Top-Drinks {
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.DMA-item {
   background-color: white;
   border-radius: 16px;
   display: flex;
@@ -556,6 +613,10 @@ p {
 
   .image-mobile {
    display:block;
+  }
+
+  .DMA-Images {
+    border-radius: 0px;
   }
 
   .footer {
