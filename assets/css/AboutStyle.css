@@ -366,6 +366,12 @@ body {
  margin-right: auto;
 }
 
+.footer-logo {
+  position: relative;
+  width: 80px;
+  float: right;
+}
+
 .footer-content-2 {
  display: grid;
  grid-template-columns: 33.33% 33.33% 33.33%;
@@ -399,10 +405,8 @@ body {
  font-weight: 400;
 }
 
-.footer-logo {
-  position: relative;
-  width: 80px;
-  float: right;
+.footer-address {
+    color: white;
 }
 
 @media only screen and (max-width: 1010px) {
