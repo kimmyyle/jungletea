@@ -314,9 +314,9 @@ p {
     }
 }
 
-/*.Our-Top-Drinks-Images {
-    height: 50%;
-}*/
+.Our-Top-Drinks-Images {
+  border-radius: 16px 16px 0px 0px;
+}
 
 .DMAs{
   display: flex;
