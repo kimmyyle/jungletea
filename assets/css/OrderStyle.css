@@ -42,14 +42,11 @@ a {
 #Logo {
     height: 32px;
     margin: 8px;
-    margin-top: 10px;
 }
 
 @media only screen and (max-width: 978px) {
     #Logo {
         height: 24px;
-        margin-top: 8px;
-        margin-bottom: 6px;
     }
     a.Logo {
         position: relative;
@@ -127,6 +124,54 @@ a {
   padding-bottom: 2px;
 }
 
+@media only screen and (max-width: 978px) {
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-link {
+        font-weight: 600;
+    }
+
+    .nav-link-active{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #000000;
+      border-bottom: solid 4px #003300;
+      text-decoration-line: none;
+      padding-bottom: 2px;
+    }
+
+    .SocialIcons {
+      float: right;
+      margin-top: -13px;
+      width: 44px;
+    }
+
+    .SocialIcons:hover {
+      cursor: pointer;
+    }
+}
 
 @media only screen and (max-width: 480px) {
   .nav-link {
@@ -179,45 +224,6 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 978px) {
-    .nav-item {
-        margin: 2rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-link {
-        font-weight: 600;
-    }
-
-    .SocialIcons {
-      float: right;
-      margin-top: -13px;
-      width: 44px;
-    }
-
-    .SocialIcons:hover {
-      cursor: pointer;
-    }
-}
-
 a.image:hover {
   cursor: pointer;
   box-shadow: 0 0 0px rgba(33,33,33,.4);
@@ -230,24 +236,234 @@ body {
   padding: 0px;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #000000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.HeroImage {
+  width: 100%;
+}
+
 p {
   font-size: 16px;
   line-height: 24px;
-  float: left;
   font-weight: 600;
-  color: #000000;
-  text-align: left;
-  margin: 0px 16px 16px 16px;
 }
 
-.Order-Body {
-  font-size: 32px;
-  line-height: 48px;
+b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  width: 450px;
+  border: 2px dotted #999;
+}
+
+.Drinks-Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Our-Top-Drinks-Title {
+  align-items: center;
+  align-content: center;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 700;
-  text-align: center;
   color: #000000;
-  margin-top: 224px;
-  margin-bottom: 224px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.Our-Top-Drinks-Caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+    .Our-Top-Drinks-Title {
+      font-size: 20px;
+      line-height: 32px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+}
+
+.Top-Drinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.DrinksandToppings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.Top-Drinks-mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: none;
+}
+
+@media only screen and (max-width: 1030px) {
+    .Top-Drinks {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .DrinksandToppings {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 978px) {
+    .Top-Drinks {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .DrinksandToppings {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-Drinks {
+        display: none;
+    }
+
+    .DrinksandToppings {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7.5%;
+      margin-right: 11%;
+    }
+
+    .Top-Drinks-mobile {
+        display: flex;
+        flex-direction: row;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .Top-Drink-Item {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    b {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+}
+
+.Top-Drink-Item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.Top-Drink-Item > * {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 481px) {
+    .Top-Drink-Item {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-Drink-Item > * {
+        margin: 0px;
+    }
+}
+
+.Our-Top-Drinks {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Top-Drink-Title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-Drink-Title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.Our-Top-Drinks-Images {
+  border-radius: 8px;
+}
+
+.Drink-Description {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  text-align: left;
 }
 
 .footer {
@@ -261,6 +477,7 @@ p {
  padding-right: 10%;
  display: flex;
  flex-direction: column;
+ margin-top: 40px;
 }
 
 .footer-content-1 {
@@ -318,23 +535,6 @@ p {
     color: white;
 }
 
-
-/*@media only screen and (min-width: 1024px) {
-  .Order-Body {
-    margin-top: 345px;
-    margin-bottom: 345px;
-  }
-
-}*/
-
-@media only screen and (min-width: 1024px) {
-  .Order-Body {
-    margin-top: 224px;
-    margin-bottom: 224px;
-  }
-
-}
-
 @media only screen and (max-width: 1010px) {
     .footer-content-left {
         padding-left: 10%;
@@ -362,34 +562,7 @@ p {
     }
 }
 
-
-@media only screen and (min-width: 769px) {
-  .header {
-    z-index: 1;
-  }
-
-}
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-  .Order-Body {
-    margin-top: 224px;
-    margin-bottom: 224px;
-  }
-
-}
-
 @media only screen and (max-width: 480px) {
-  .header {
-    z-index: 1;
-  }
-
-  .Order-Body {
-    font-size: 24px;
-    line-height: 36px;
-    margin-top: 126px;
-    margin-bottom: 126px;
-  }
-
   .footer {
     padding-top: 16px;
     padding-bottom: 24px;
@@ -398,11 +571,11 @@ p {
   .footer-logo {
     width: 80px;
   }
-
+  
   .footer-content-1 {
     margin-bottom: 16px;
   }
-  
+
   .footer-header-text {
    font-size: 14px;
    line-height: 20px;
@@ -416,11 +589,5 @@ p {
   }
 
 }
-
-
-
-
-
-
 
 
