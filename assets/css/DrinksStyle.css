@@ -568,6 +568,10 @@ p {
     color: white;
 }
 
+a.footer-link {
+    color: white;
+}
+
 @media only screen and (min-width: 1024px) {
     .footer-content-center {
         padding-left: 30%;
