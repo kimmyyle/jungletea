@@ -580,12 +580,12 @@ a.footer-link {
     color: white;
 }
 
-@media only screen and (min-width: 1024px) {
+/**@media only screen and (min-width: 1024px) {
     .footer-content-center {
         padding-left: 30%;
         padding-right: 30%;
     }
-}
+}**/
 
 @media only screen and (max-width: 820px) {
   .footer-content-center {
